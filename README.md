@@ -5,7 +5,9 @@ MySQL Operator enables bulletproof MySQL on Kubernetes. It manages all the neces
 MySQL Operator was developed by the awesome engineering team at [Presslabs](https://www.presslabs.com/), 
 a Managed WordPress Hosting provider.
 
-For more open-source projects, check [Presslabs Code](https://www.presslabs.org/). 
+For more open-source projects, check [Presslabs Code](https://www.presslabs.org/).
+
+__NOTE__: MySQL Operator 0.2.x require at least Kubernetes 1.11.x while version 0.1.x are known to work with Kubernetes up 1.9.x. For upgrading check the [0.2.x upgrade notes](#user-content-v02x-upgrade) since some manual seps are required.
 
 ## Goals and status
 
@@ -24,6 +26,9 @@ We welcome all contributions in the form of new issues for feature requests, bug
 We are open to discuss ideas to improve the operator and would also love to find out where and how it is used.
 The discussion related to the project should happen on [Gitter](https://gitter.im/PressLabs/mysql-operator).
 The current developers of the project can be reached via [email](mailto:ping@presslabs.com) too.
+
+## v0.2.X upgrade
+
 
 ## Controller deploy
 
