@@ -1,4 +1,4 @@
-__NOTE__: MySQL Operator 0.2.x require at least Kubernetes 1.11.x while version 0.1.x is known to work with Kubernetes up 1.9.x. For upgrading check the [0.2.x upgrade notes](#v02x-upgrade) since some manual seps are required.
+__NOTE__: MySQL Operator 0.2.x requires at least Kubernetes 1.11.x while version 0.1.x is known to work with Kubernetes up 1.9.x. For upgrading check the [0.2.x upgrade notes](#v02x-upgrade) since some manual seps are required.
 
 # MySQL Operator
 
