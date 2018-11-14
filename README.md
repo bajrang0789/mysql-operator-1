@@ -1,3 +1,5 @@
+__NOTE__: MySQL Operator 0.2.x require at least Kubernetes 1.11.x while version 0.1.x is known to work with Kubernetes up 1.9.x. For upgrading check the [0.2.x upgrade notes](#v02x-upgrade) since some manual seps are required.
+
 # MySQL Operator
 
 MySQL Operator enables bulletproof MySQL on Kubernetes. It manages all the necessary resources for deploying and managing a highly available MySQL cluster. It provides efortless backups, while keeping the cluster highly-available.
@@ -6,8 +8,6 @@ MySQL Operator was developed by the awesome engineering team at [Presslabs](http
 a Managed WordPress Hosting provider.
 
 For more open-source projects, check [Presslabs Code](https://www.presslabs.org/).
-
-__NOTE__: MySQL Operator 0.2.x require at least Kubernetes 1.11.x while version 0.1.x are known to work with Kubernetes up 1.9.x. For upgrading check the [0.2.x upgrade notes](#v02x-upgrade) since some manual seps are required.
 
 ## Goals and status
 
