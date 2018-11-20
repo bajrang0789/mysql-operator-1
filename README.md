@@ -1,4 +1,4 @@
-__NOTE__: MySQL Operator 0.2.x requires at least Kubernetes 1.11.x while version 0.1.x is known to work with Kubernetes up 1.9.x. For upgrading check the [0.2.x upgrade notes](#v02x-upgrade) since some manual seps are required.
+__NOTE__: MySQL Operator 0.2.x requires at least Kubernetes 1.11.x (or 1.10.x with alpha features) while version 0.1.x is known to work with Kubernetes up 1.9.x. For upgrading check the [0.2.x upgrade notes](#v02x-upgrade) since some manual seps are required.
 
 # MySQL Operator
 
@@ -27,9 +27,6 @@ We are open to discuss ideas to improve the operator and would also love to find
 The discussion related to the project should happen on [Gitter](https://gitter.im/PressLabs/mysql-operator).
 The current developers of the project can be reached via [email](mailto:ping@presslabs.com) too.
 
-## v0.2.X upgrade
-
-
 ## Controller deploy
 
 Install helm. New to helm? Check https://github.com/helm/helm#install 
@@ -44,6 +41,15 @@ helm install presslabs/mysql-operator --name mysql-operator
 
 For more information about chart values see chart [README](hack/charts/mysql-operator/README.md).
 This chart will deploy the controller along with an [orchestrator](https://github.com/github/orchestrator) cluster.
+
+### v0.2.x upgrade
+
+1. Scale to 0 the current operator deployment. This won't affect your running databases.
+2. Upgrade your cluster control plane to 1.11
+3. Update the installed CRDs: `kubectl apply -f https://raw.githubusercontent.com/presslabs/mysql-operator/master/hack/02x-crds.yaml`
+4. Upgrade the mysql-operator `helm upgrade mysql-operator presslabs/mysql-operator`
+5. Scale the operator deployment up
+6. Now you can upgrade you nodes as well.
 
 ## Deploying a cluster
 __tl;dr__
