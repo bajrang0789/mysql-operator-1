@@ -50,6 +50,7 @@ This chart will deploy the controller along with an [orchestrator](https://githu
 4. Upgrade the mysql-operator `helm upgrade mysql-operator presslabs/mysql-operator`
 5. Scale the operator deployment up
 6. Now you can upgrade you nodes as well.
+7. Enjoy!
 
 ## Deploying a cluster
 __tl;dr__
